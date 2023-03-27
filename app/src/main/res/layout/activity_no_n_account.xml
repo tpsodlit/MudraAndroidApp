@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoNAccountActivity">
+
+
+    <TextView
+        android:id="@+id/tv_title_coll_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Collection Type"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="10dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_coll_type"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rectangular_shape"
+        >
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/spin_type"
+            android:spinnerMode="dropdown"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_ca_number_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CA Number"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/ll_spinner"
+        />
+
+
+    <EditText
+        android:id="@+id/et_ca"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ca_number_title"
+        android:background="@drawable/rectangular_shape"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Enter 11 digit CA number"
+        android:paddingStart="10dp"
+        android:maxLength="11"
+        android:imeOptions="actionDone"
+        />
+
+    <TextView
+        android:id="@+id/tv_notification_number_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification Number"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/et_ca"
+        />
+
+    <EditText
+        android:id="@+id/et_notification"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_notification_number_title"
+        android:background="@drawable/rectangular_shape"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Enter notification number"
+        android:paddingStart="10dp"
+        android:imeOptions="actionDone"
+        />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et_notification"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btn_submit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:text="BACK"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

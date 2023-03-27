@@ -1,0 +1,24 @@
+Following changes done:
+1. ACCollection --- add consumnernosearch
+2. Advance Collection -- set current bill
+3. Check MobileNumActivity -- Invalidate incorrect MobNo's
+4. EnergySearchActivity -- new file
+5. MainActivity -- Refresh and balance fetch update and other changes
+6. Adapter-->
+    Energysearchadapter -- newfile
+7. Model-->
+    EnergyModel
+    ResponseModel
+Manifest file must contain newly added activite files
+8. ReceiptPrinters -- all three files
+9. ServerLinks 
+10. CommonMethods-- Validate mobileno new method
+11. Databaseaccess changes(related to above code changes)
+12. AndroidManifest.xml
+13.Layout --->
+	Activity_ac_collection
+	activity_enery_search --> new file
+      Adapter_ensearch---> new file
+
+
+Testing done in live apk and also tested for Print Duplicate using test printer on 16 Aug

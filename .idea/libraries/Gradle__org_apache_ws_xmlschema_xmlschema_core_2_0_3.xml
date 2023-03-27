@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.ws.xmlschema:xmlschema-core:2.0.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.ws.xmlschema/xmlschema-core/2.0.3/4058ca983dd275363bd454393e1889c2ba978c74/xmlschema-core-2.0.3.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.ws.xmlschema/xmlschema-core/2.0.3/64baa30beef3945ca308bfc459c64a3569230dd3/xmlschema-core-2.0.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.ws.xmlschema/xmlschema-core/2.0.3/1bc1e7817d4bfd12de7f18c9e9c7136141050bdb/xmlschema-core-2.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_gravity="center"
+    tools:context=".activity.MainActivity">
+
+    <!-- <com.google.android.material.appbar.AppBarLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:theme="@style/AppTheme.AppBarOverlay">
+
+         <androidx.appcompat.widget.Toolbar
+             android:id="@+id/toolbar"
+             android:layout_width="match_parent"
+             android:layout_height="?attr/actionBarSize"
+             app:popupTheme="@style/AppTheme"
+             android:background="?attr/colorPrimary" >
+             <TextView
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceLarge"
+                 android:text="TPSODL Welcomes You"
+                 android:id="@+id/textView"
+                 android:layout_weight="0.15"
+                 android:textColor="#ffffff"
+                 android:textAlignment="gravity"
+                 android:singleLine="true"
+                 android:gravity="center|fill_vertical"
+                 android:textStyle="bold"
+                 android:textSize="25dp" />
+         </androidx.appcompat.widget.Toolbar>
+
+     </com.google.android.material.appbar.AppBarLayout>-->
+
+
+
+    <include layout="@layout/content_main" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

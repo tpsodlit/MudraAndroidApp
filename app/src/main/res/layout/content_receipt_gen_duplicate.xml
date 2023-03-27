@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:showIn="@layout/activity_receipt_gen_duplicate"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    tools:context="com.collection.tpwodloffline.ReceiptGenDuplicate">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Re-generate Receipt"
+            android:id="@+id/RegenBtn"
+            android:layout_gravity="center_horizontal"
+            android:background="#6183c3"
+            android:textStyle="bold"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Receipt Generation in progress"
+            android:id="@+id/RecptMsg"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Cust. ID"
+            android:id="@+id/custid"
+            android:layout_weight="0"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Receipt No:"
+            android:id="@+id/RecptNo"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#f84646" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/AmtPaid"
+            android:layout_marginTop="15dp"
+            android:text="Amount Paid:"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Receipt Date:"
+            android:id="@+id/RecptDT"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Trans ID:"
+            android:id="@+id/transID"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Print Receipt"
+            android:id="@+id/printrcptBtn"
+            android:layout_marginTop="30dp"
+            android:background="#6183c3"
+            android:textStyle="bold"
+            android:textSize="25dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:id="@+id/backbtn"
+            android:layout_gravity="right"
+            android:background="#6183c3"
+            android:textStyle="bold"
+            android:textSize="25dp" />
+    </LinearLayout>
+</RelativeLayout>

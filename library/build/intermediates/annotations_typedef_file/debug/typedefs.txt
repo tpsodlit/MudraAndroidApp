@@ -1,0 +1,2 @@
+D jp/co/recruit_lifestyle/android/floatingview/FloatingView$AnimationState
+D jp/co/recruit_lifestyle/android/floatingview/TrashView$AnimationState

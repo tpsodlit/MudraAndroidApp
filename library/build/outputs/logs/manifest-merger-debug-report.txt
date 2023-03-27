@@ -1,0 +1,41 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml:1:1-4:12
+INJECTED from D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml:1:1-4:12
+INJECTED from D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml:1:1-4:12
+INJECTED from D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml:1:1-4:12
+INJECTED from D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml:1:1-4:12
+INJECTED from D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml:1:1-4:12
+INJECTED from D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml:1:1-4:12
+	package
+		ADDED from D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml:1:11-65
+		INJECTED from D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml
+		INJECTED from D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml
+		ADDED from D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml:1:1-4:12
+		INJECTED from D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml:2:11-57
+	xmlns:android
+		ADDED from D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml:1:1-4:12
+	android:versionCode
+		INJECTED from D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml
+		ADDED from D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml:1:1-4:12
+		INJECTED from D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml
+uses-sdk
+ADDED from D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml:3:5-74
+INJECTED from D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml:3:5-74
+INJECTED from D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml:3:5-74
+INJECTED from D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml:3:5-74
+INJECTED from D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml:3:5-74
+	tools:overrideLibrary
+		ADDED from D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml:3:15-71
+	android:targetSdkVersion
+		INJECTED from D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml
+		ADDED from D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml:3:5-74
+		INJECTED from D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml
+		ADDED from D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml:3:5-74
+		INJECTED from D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml

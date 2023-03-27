@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Mudra.iml" filepath="$PROJECT_DIR$/.idea/modules/Mudra.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Mudra.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Mudra.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Mudra.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Mudra.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Mudra.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Mudra.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Mudra.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Mudra.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/Mudra.library.iml" filepath="$PROJECT_DIR$/.idea/modules/library/Mudra.library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/Mudra.library.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/library/Mudra.library.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/Mudra.library.main.iml" filepath="$PROJECT_DIR$/.idea/modules/library/Mudra.library.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/Mudra.library.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/library/Mudra.library.unitTest.iml" />
+    </modules>
+  </component>
+</project>

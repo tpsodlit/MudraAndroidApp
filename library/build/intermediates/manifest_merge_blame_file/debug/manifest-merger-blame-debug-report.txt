@@ -1,0 +1,17 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="jp.co.recruit_lifestyle.android.floatingview"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+8-->D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml:3:5-74
+9        android:minSdkVersion="14"
+9-->D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml:3:5-74
+10        android:targetSdkVersion="29"
+10-->D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml:3:5-74
+11        tools:overrideLibrary="android.support.dynamicanimation" />
+11-->D:\Andrprojs\tpsodl\Mudra\library\src\main\AndroidManifest.xml:3:15-71
+12
+13</manifest>

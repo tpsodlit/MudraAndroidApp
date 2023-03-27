@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:showIn="@layout/activity_account_infor_non"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    tools:context="com.collection.tpwodloffline.AccountInforNonAc">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tableLayout">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Ref. No :"
+                android:id="@+id/textView21"
+                android:layout_column="0"
+                android:layout_marginBottom="2dp"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/consno"
+                android:layout_column="1"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Name :"
+                android:id="@+id/textView25"
+                android:layout_column="0"
+                android:layout_marginBottom="2dp"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/name"
+                android:layout_column="1"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_below="@+id/tableLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Amount Payble"
+            android:id="@+id/pbl1"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#ca2626" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/amtpayble"
+            android:layout_column="0"
+            android:hint="Amount Payble"
+            android:layout_marginBottom="15dp"
+            android:textStyle="bold|normal"
+            android:textSize="22dp" />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/btnSubmit"
+            android:layout_column="0"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:background="#6183c3"
+            android:layout_marginLeft="30dp" />
+    </LinearLayout>
+</RelativeLayout>

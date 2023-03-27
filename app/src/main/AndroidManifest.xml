@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.collection.tpwodloffline">
+
+    <queries>
+        <package android:name="com.countercollection.tpwodloffline" />
+    </queries>
+    <supports-screens android:anyDensity="true" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_SCAN"
+        android:usesPermissionFlags="neverForLocation"
+        tools:targetApi="s" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.fcmpushnotification.permission.BROADCAST_BADGE" />
+    <dist:module dist:instant="true" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/appicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="HardcodedDebugMode"
+        tools:node="merge"
+        tools:replace="android:allowBackup">
+
+        <service
+            android:name=".utils.ChatHeadService"
+            android:exported="false" />
+        <activity
+            android:name=".activity.RadioOTSNonOTS"
+            android:exported="false" />
+        <activity
+            android:name=".activity.OTSInfo"
+            android:exported="false" />
+        <activity
+            android:name=".activity.OnlinePayment"
+            android:exported="false"
+            android:label="@string/title_activity_online_payment" />
+        <activity
+            android:name=".otp.DeviceList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".nonenergy.NonEnergyDashboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:exported="false" />
+        <activity
+            android:name=".nonenergy.NonEnergySync"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".nonenergy.SearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:exported="false" />
+        <activity
+            android:name=".activity.EnergySearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:exported="false" />
+        <activity
+            android:name=".nonenergy.NonEnergyPayDetails"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".nonenergy.NonenReceiptGen"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ConsumerNavigation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".activity.ConsumerBillinfo"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Testing.MainActivity2" />
+        <activity android:name=".Testing.GetMobileActivity" />
+        <activity android:name=".Testing.MainActivityTest" />
+        <activity android:name=".Testing.PrintRecptAmigoThermalTesting" />
+        <activity android:name=".utils.DeviceList" />
+        <activity
+            android:name=".otp.GenerateOTP"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".background.UploadDataService"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.OfflineRecords"
+            android:screenOrientation="portrait" />
+        <activity android:name=".NoNAccountActivity" />
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".broadcasts.DialogGPS"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".activity.ColDashboard"
+            android:label="@string/title_activity_col_dashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.AcCollection"
+            android:label="@string/title_activity_ac_collection"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OthCollection"
+            android:label="@string/title_activity_oth_collection"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.AccountInfo"
+            android:label="@string/title_activity_account_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.CollectionDashBoard"
+            android:label="@string/title_activity_collection_dash_board"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CollReportActivity"
+            android:label="@string/title_activity_coll_report"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.AdvanceCollection"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CollUploadMenuActivity"
+            android:label="@string/title_activity_coll_upload_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CollDownloadMenuActivity"
+            android:label="@string/title_activity_coll_download_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CollSetupMenuActivity"
+            android:label="@string/title_activity_coll_setup_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CollUtilitiesActivity"
+            android:label="@string/title_activity_coll_utilities"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ConsNotFound"
+            android:label="@string/title_activity_cons_not_found"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.PaySummary"
+            android:label="@string/title_activity_pay_summary"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.SummaryDtl"
+            android:label="@string/title_activity_summary_dtl"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.OTSReport"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.DetailsReportActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.OldDetailsReportActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CalenderViewP"
+            android:label="@string/title_activity_calender_view_p"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PrintRecpt"
+            android:label="@string/title_activity_print_recpt"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ReceiptGen"
+            android:label="@string/title_activity_receipt_gen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.DuplicateSummary"
+            android:label="@string/title_activity_duplicate_summary"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ReportPrint"
+            android:label="@string/title_activity_report_print"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PaySummaryNonAcnt"
+            android:label="@string/title_activity_pay_summary_non_acnt"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SumDtlNonAcnt"
+            android:label="@string/title_activity_sum_dtl_non_acnt"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AccountInforNonAc"
+            android:label="@string/title_activity_account_infor_non"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DuplicateReceipt"
+            android:label="@string/title_activity_duplicate_receipt"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SwitchUrlSetupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ReceiptGenDuplicate"
+            android:label="@string/title_activity_receipt_gen_duplicate"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SetPrinterTypeActivity" />
+        <activity android:name=".PrintRecptSBM" />
+        <activity android:name=".PrintRecptAnalogicThermal" />
+        <activity android:name=".PrintRecptEpsonThermal" />
+        <activity android:name=".PrintRecptSoftlandImpact" />
+        <activity android:name=".PrintRecptAmigoImpact" />
+        <activity android:name=".PrintRecptAnalogicImpact" />
+        <activity android:name=".ReportPrintEpsonThermal" />
+        <activity android:name=".ReportPrintAnalogicThermal" />
+        <activity android:name=".activity.CheckMobileNumActivity" />
+        <activity android:name=".ReportPrintAnalogicImpact" />
+        <activity android:name=".ReportPrintSoftlandImpact" />
+        <activity android:name=".PrintRecptPhiThermal" />
+        <activity android:name=".Testing.PrintRecptPhiThermalTesting" />
+        <activity android:name=".ReportPrintPhiThermal" />
+        <activity android:name=".PrintRecptAmigoThermal" />
+
+        <activity
+            android:name=".ReceiptPrinters.PrintRecptAnalogicThermalNew"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReceiptPrinters.PrintRecptAnalogicImpactNew"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReceiptPrinters.PrintRecptAmigoThermalNew"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ReportPrintAmigoThermal" />
+        <activity android:name=".ReportPrintAmigoImpact" />
+
+        <activity
+            android:name=".ReportPrinters.PrintDetailedReportAnalogicImpactNew"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReportPrinters.PrintDetailedReportAmigoThermalNew"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ReportPrinters.PrintReportAmigoThermalNew"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReportPrinters.PrintReportAnalogicImpactNew"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config>
+        <device id="pixel_5" />
+        <device id="_device_class_phone" />
+        <target>android-30</target>
+      </config>
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="171d3afa-86e5-460a-bfbf-59606857081d" name="Default Changelist" comment="By Sradhendu">
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Mudra.app.androidTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Mudra.app.androidTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Mudra.app.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Mudra.app.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Mudra.app.unitTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Mudra.app.unitTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/library/Mudra.library.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/library/Mudra.library.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/CommonMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/CommonMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/DatabaseAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/DatabaseAccess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/DatabaseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/DatabaseHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/PrintRecpt.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/PrintRecpt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/PrintRecptAmigoImpact.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/PrintRecptAmigoImpact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/PrintRecptAmigoThermal.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/PrintRecptAmigoThermal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/PrintRecptAnalogicImpact.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/PrintRecptAnalogicImpact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/PrintRecptSoftlandImpact.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/PrintRecptSoftlandImpact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/ReceiptPrinters/PrintRecptAmigoThermalNew.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/ReceiptPrinters/PrintRecptAmigoThermalNew.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/ReceiptPrinters/PrintRecptAnalogicImpactNew.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/ReceiptPrinters/PrintRecptAnalogicImpactNew.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/ReceiptPrinters/PrintRecptAnalogicThermalNew.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/ReceiptPrinters/PrintRecptAnalogicThermalNew.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/Testing/MainActivityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/Testing/MainActivityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/Testing/PrintRecptAmigoThermalTestingDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/Testing/PrintRecptAmigoThermalTestingDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/UploadManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/UploadManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/AcCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/AcCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/AccountInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/AccountInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/AdvanceCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/AdvanceCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/CheckMobileNumActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/CheckMobileNumActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/ColDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/ColDashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/CollectionDashBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/CollectionDashBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/DuplicateSummary.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/DuplicateSummary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/OfflineRecords.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/OfflineRecords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/PaySummary.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/PaySummary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/ReceiptGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/ReceiptGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/SummaryDtl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/SummaryDtl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/application/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/application/MyApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/otp/GenerateOTP.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/otp/GenerateOTP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/utils/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/utils/ServerLinks.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/utils/ServerLinks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_ac_collection.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_ac_collection.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_offline_records.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_offline_records.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_pay_summary.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_pay_summary.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_pay_summary_non_acnt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_pay_summary_non_acnt.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/library/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/0764a08a260f5630446d62689c3c428a/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/2aa9b0312b2767b22a2e27d65ef2cc87/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/37fd0c143c62eba6af91d26993aa3b4e/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/37fd0c143c62eba6af91d26993aa3b4e/transformed/classes/classes.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/53405b0fe832820d3f6e4945d0d192f5.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/53405b0fe832820d3f6e4945d0d192f5/classes/classes.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/6d9587844cd5465342a0375fa1f98f6c.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/6d9587844cd5465342a0375fa1f98f6c/classes/classes.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/702526470634c5db3b26fa6437c35a53.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/702526470634c5db3b26fa6437c35a53/classes/classes.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/844d3be35e4bcc2b94314ace958db673/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/844d3be35e4bcc2b94314ace958db673/transformed/debug/jp/co/recruit_lifestyle/android/floatingview/BuildConfig.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/844d3be35e4bcc2b94314ace958db673/transformed/debug/jp/co/recruit_lifestyle/android/floatingview/FloatingView$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/844d3be35e4bcc2b94314ace958db673/transformed/debug/jp/co/recruit_lifestyle/android/floatingview/FloatingView$2.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/844d3be35e4bcc2b94314ace958db673/transformed/debug/jp/co/recruit_lifestyle/android/floatingview/FloatingView$3.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/844d3be35e4bcc2b94314ace958db673/transformed/debug/jp/co/recruit_lifestyle/android/floatingview/FloatingView$4.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/844d3be35e4bcc2b94314ace958db673/transformed/debug/jp/co/recruit_lifestyle/android/floatingview/FloatingView$5.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/844d3be35e4bcc2b94314ace958db673/transformed/debug/jp/co/recruit_lifestyle/android/floatingview/FloatingView$6.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/844d3be35e4bcc2b94314ace958db673/transformed/debug/jp/co/recruit_lifestyle/android/floatingview/FloatingView$AnimationState.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/844d3be35e4bcc2b94314ace958db673/transformed/debug/jp/co/recruit_lifestyle/android/floatingview/FloatingView$FloatingAnimationHandler.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/844d3be35e4bcc2b94314ace958db673/transformed/debug/jp/co/recruit_lifestyle/android/floatingview/FloatingView$LongPressHandler.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/844d3be35e4bcc2b94314ace958db673/transformed/debug/jp/co/recruit_lifestyle/android/floatingview/FloatingView.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/844d3be35e4bcc2b94314ace958db673/transformed/debug/jp/co/recruit_lifestyle/android/floatingview/FloatingViewListener.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/844d3be35e4bcc2b94314ace958db673/transformed/debug/jp/co/recruit_lifestyle/android/floatingview/FloatingViewManager$DisplayMode.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/844d3be35e4bcc2b94314ace958db673/transformed/debug/jp/co/recruit_lifestyle/android/floatingview/FloatingViewManager$MoveDirection.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/844d3be35e4bcc2b94314ace958db673/transformed/debug/jp/co/recruit_lifestyle/android/floatingview/FloatingViewManager$Options.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/844d3be35e4bcc2b94314ace958db673/transformed/debug/jp/co/recruit_lifestyle/android/floatingview/FloatingViewManager.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/844d3be35e4bcc2b94314ace958db673/transformed/debug/jp/co/recruit_lifestyle/android/floatingview/FullscreenObserverView.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/844d3be35e4bcc2b94314ace958db673/transformed/debug/jp/co/recruit_lifestyle/android/floatingview/ScreenChangedListener.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/844d3be35e4bcc2b94314ace958db673/transformed/debug/jp/co/recruit_lifestyle/android/floatingview/TrashView$AnimationHandler.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/844d3be35e4bcc2b94314ace958db673/transformed/debug/jp/co/recruit_lifestyle/android/floatingview/TrashView$AnimationState.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/844d3be35e4bcc2b94314ace958db673/transformed/debug/jp/co/recruit_lifestyle/android/floatingview/TrashView.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/844d3be35e4bcc2b94314ace958db673/transformed/debug/jp/co/recruit_lifestyle/android/floatingview/TrashViewListener.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/844d3be35e4bcc2b94314ace958db673/transformed/desugar_graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/91802dc2c45373ff1af1f6a786b34461.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/91802dc2c45373ff1af1f6a786b34461/classes/classes.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/bbf9a8b77606ae93ce359bf284bcaf8c.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/bbf9a8b77606ae93ce359bf284bcaf8c/classes/classes.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/defb25a6eb6d514e75559a64ba84c9af/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/defb25a6eb6d514e75559a64ba84c9af/transformed/classes/classes.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/dfcd78cf6167fba0fbb2f753b0730200/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/f929bb8d99ee62331398be04e2c02f59.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/f929bb8d99ee62331398be04e2c02f59/classes/classes.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/generated/source/buildConfig/release/jp/co/recruit_lifestyle/android/floatingview/BuildConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/aapt_friendly_merged_manifests/release/aapt/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/aapt_friendly_merged_manifests/release/aapt/output-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/aar_metadata/release/aar-metadata.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/annotation_processor_list/release/annotationProcessors.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/compile_library_classes_jar/release/classes.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/compile_r_class_jar/release/R.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/compile_symbol_list/release/R.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeDebugShaders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeReleaseShaders/merger.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/packageDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library/build/intermediates/incremental/packageDebugAssets/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/library/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library/build/intermediates/incremental/packageDebugResources/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/packageReleaseAssets/merger.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/packageReleaseResources/merger.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/classes/jp/co/recruit_lifestyle/android/floatingview/BuildConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/classes/jp/co/recruit_lifestyle/android/floatingview/FloatingView$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/classes/jp/co/recruit_lifestyle/android/floatingview/FloatingView$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/classes/jp/co/recruit_lifestyle/android/floatingview/FloatingView$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/classes/jp/co/recruit_lifestyle/android/floatingview/FloatingView$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/classes/jp/co/recruit_lifestyle/android/floatingview/FloatingView$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/classes/jp/co/recruit_lifestyle/android/floatingview/FloatingView$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/classes/jp/co/recruit_lifestyle/android/floatingview/FloatingView$AnimationState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/classes/jp/co/recruit_lifestyle/android/floatingview/FloatingView$FloatingAnimationHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/classes/jp/co/recruit_lifestyle/android/floatingview/FloatingView$LongPressHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/classes/jp/co/recruit_lifestyle/android/floatingview/FloatingView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/classes/jp/co/recruit_lifestyle/android/floatingview/FloatingViewListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/classes/jp/co/recruit_lifestyle/android/floatingview/FloatingViewManager$DisplayMode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/classes/jp/co/recruit_lifestyle/android/floatingview/FloatingViewManager$MoveDirection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/classes/jp/co/recruit_lifestyle/android/floatingview/FloatingViewManager$Options.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/classes/jp/co/recruit_lifestyle/android/floatingview/FloatingViewManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/classes/jp/co/recruit_lifestyle/android/floatingview/FullscreenObserverView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/classes/jp/co/recruit_lifestyle/android/floatingview/ScreenChangedListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/classes/jp/co/recruit_lifestyle/android/floatingview/TrashView$AnimationHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/classes/jp/co/recruit_lifestyle/android/floatingview/TrashView$AnimationState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/classes/jp/co/recruit_lifestyle/android/floatingview/TrashView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/release/classes/jp/co/recruit_lifestyle/android/floatingview/TrashViewListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/library_manifest/release/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/local_only_symbol_list/release/R-def.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/library/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/manifest_merge_blame_file/release/manifest-merger-blame-release-report.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/merged_manifest/debug/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/merged_manifest/release/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/navigation_json/release/navigation.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/packaged_manifests/release/output-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/runtime_library_classes_dir/debug/jp/co/recruit_lifestyle/android/floatingview/BuildConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/runtime_library_classes_dir/debug/jp/co/recruit_lifestyle/android/floatingview/FloatingView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/runtime_library_classes_dir/debug/jp/co/recruit_lifestyle/android/floatingview/FloatingViewListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/runtime_library_classes_dir/debug/jp/co/recruit_lifestyle/android/floatingview/FloatingViewManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/runtime_library_classes_dir/debug/jp/co/recruit_lifestyle/android/floatingview/FullscreenObserverView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/runtime_library_classes_dir/debug/jp/co/recruit_lifestyle/android/floatingview/ScreenChangedListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/runtime_library_classes_dir/debug/jp/co/recruit_lifestyle/android/floatingview/TrashView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/runtime_library_classes_dir/debug/jp/co/recruit_lifestyle/android/floatingview/TrashViewListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/runtime_library_classes_jar/release/classes.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/symbol_list_with_package_name/release/package-aware-r.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/library/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/outputs/logs/manifest-merger-release-report.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/tmp/compileReleaseJavaWithJavac/source-classes-mapping.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[0123456789ABCDEF]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Mudra" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="layoutResourceFile" />
+        <option value="resourceFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="E:\android_apk\Mudra\tpwodloffline.jks" />
+    <option name="KEY_ALIAS" value="tpwodloffline" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+    <option name="BUILD_TARGET_KEY" value="apk" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/app/build.gradle" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="KotlinMultiplatform">
+    <allAvailableExecutables />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
+  <component name="ProjectId" id="20dDT3Zjezyjha9FHE6PpCTThPY" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ApkExportedModule" value="Mudra.app" />
+    <property name="DEBUGGABLE_DEVICE" value="pax-a910-1491981267" />
+    <property name="DEBUGGABLE_PROCESS" value="com.collection.tpwodloffline" />
+    <property name="DEBUGGER_ID" value="Auto" />
+    <property name="ExportApk.ApkPath" value="E:\android_apk\Mudra" />
+    <property name="ExportApk.BuildVariants" value="release" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHOW_ALL_PROCESSES" value="false" />
+    <property name="ScreenshotViewer.SavePath" value="$PROJECT_DIR$/../../../Tataprojects/LIVEAPK" />
+    <property name="WORKMANAGER_INSPECTOR_NOTIFICATION_DISMISSED" value="true" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="com.android.tools.idea.sqlite.queryhistory" value="delete from OTSConsumerDataUpload&#10;delete from otsconsumerdataupload&#10;delete from CUST_DATA&#10;delete from coll_sbm_data_bkp&#10;delete from coll_sbm_data" />
+    <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/DBfiles" />
+    <property name="project.structure.last.edited" value="Dependencies" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+    <property name="two.files.diff.last.used.file" value="$USER_HOME$/Desktop/RadioOTSNonOTS.java" />
+  </component>
+  <component name="PsdUISettings">
+    <option name="MODULE_TAB" value="Properties" />
+    <option name="LAST_EDITED_SIGNING_CONFIG" value="debug" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\TPWODL\PlayStore\Mudra\app\src\main\res\drawable" />
+      <recent name="D:\TPWODL\PlayStore\Mudra\app\src\main\assets\databases" />
+      <recent name="D:\TPWODL\PlayStore\Mudra" />
+      <recent name="D:\TPWODL\PlayStore\Mudra\app\src\main\java\com\collection\tpwodloffline\utils" />
+      <recent name="D:\TPWODL\PlayStore\Mudra\app\src\main\java\com\collection\tpwodloffline" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.collection.tpwodloffline.nonenergy" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.collection.tpwodloffline.nonenergy" />
+      <recent name="com.collection.tpwodloffline.adapter" />
+      <recent name="com.collection.tpwodloffline.utils" />
+      <recent name="com.collection.tpwodloffline.activity" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="?open Mudra" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Mudra.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Callstack Sample" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\TPSODL1\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="171d3afa-86e5-460a-bfbf-59606857081d" name="Default Changelist" comment="" />
+      <created>1636365575136</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636365575136</updated>
+    </task>
+    <task id="LOCAL-00001" summary="By Sradhendu">
+      <created>1639636098194</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1639636098194</updated>
+    </task>
+    <task id="LOCAL-00002" summary="By Sradhendu">
+      <created>1640339855344</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1640339855344</updated>
+    </task>
+    <task id="LOCAL-00003" summary="By Sradhendu">
+      <created>1644305431418</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1644305431418</updated>
+    </task>
+    <task id="LOCAL-00004" summary="By Sradhendu">
+      <created>1644305526156</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1644305526156</updated>
+    </task>
+    <task id="LOCAL-00005" summary="By Sradhendu">
+      <created>1646076237027</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1646076237027</updated>
+    </task>
+    <task id="LOCAL-00006" summary="By Sradhendu">
+      <created>1646076449224</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1646076449224</updated>
+    </task>
+    <task id="LOCAL-00007" summary="By Sradhendu">
+      <created>1656583580258</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1656583580258</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.sql" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="By Sradhendu" />
+    <option name="LAST_COMMIT_MESSAGE" value="By Sradhendu" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/OldDetailsReportActivity.java</url>
+          <line>430</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/OldDetailsReportActivity.java</url>
+          <line>432</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/OldDetailsReportActivity.java</url>
+          <line>434</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/OldDetailsReportActivity.java</url>
+          <line>435</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/OldDetailsReportActivity.java</url>
+          <line>439</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/OldDetailsReportActivity.java</url>
+          <line>438</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/OldDetailsReportActivity.java</url>
+          <line>441</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/OldDetailsReportActivity.java</url>
+          <line>442</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/OldDetailsReportActivity.java</url>
+          <line>443</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/MainActivity.java</url>
+          <line>2357</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/MainActivity.java</url>
+          <line>2365</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/MainActivity.java</url>
+          <line>2363</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/MainActivity.java</url>
+          <line>2359</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/UploadManager.java</url>
+          <line>270</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/UploadManager.java</url>
+          <line>260</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/UploadManager.java</url>
+          <line>252</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/UploadManager.java</url>
+          <line>253</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/UploadManager.java</url>
+          <line>249</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/UploadManager.java</url>
+          <line>250</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/UploadManager.java</url>
+          <line>299</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/UploadManager.java</url>
+          <line>301</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/UploadManager.java</url>
+          <line>312</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/UploadManager.java</url>
+          <line>315</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/UploadManager.java</url>
+          <line>317</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/UploadManager.java</url>
+          <line>348</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/UploadManager.java</url>
+          <line>338</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/UploadManager.java</url>
+          <line>340</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/UploadManager.java</url>
+          <line>181</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/UploadManager.java</url>
+          <line>117</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/UploadManager.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/UploadManager.java</url>
+          <line>174</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/UploadManager.java</url>
+          <line>237</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/UploadManager.java</url>
+          <line>255</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/UploadManager.java</url>
+          <line>318</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/MainActivity.java</url>
+          <line>1160</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/MainActivity.java</url>
+          <line>1232</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/MainActivity.java</url>
+          <line>1402</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/MainActivity.java</url>
+          <line>1427</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/MainActivity.java</url>
+          <line>1434</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/MainActivity.java</url>
+          <line>1525</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/MainActivity.java</url>
+          <line>1526</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/MainActivity.java</url>
+          <line>1428</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/MainActivity.java</url>
+          <line>1426</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/MainActivity.java</url>
+          <line>1429</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/ReceiptGen.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/ReceiptGen.java</url>
+          <line>288</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/AccountInfo.java</url>
+          <line>255</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/Testing/PrintRecptAmigoThermalTesting.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/Testing/PrintRecptAmigoThermalTesting.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/Testing/PrintRecptAmigoThermalTesting.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/Testing/PrintRecptAmigoThermalTesting.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/Testing/PrintRecptAmigoThermalTesting.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/Testing/PrintRecptAmigoThermalTesting.java</url>
+          <line>230</line>
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/utils/DeviceList.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/utils/DeviceList.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/utils/DeviceList.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/utils/DeviceList.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/utils/DeviceList.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/utils/DeviceList.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/SetPrinterTypeActivity.java</url>
+          <line>111</line>
+          <option name="timeStamp" value="117" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/SetPrinterTypeActivity.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/SetPrinterTypeActivity.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/SetPrinterTypeActivity.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/AdvanceCollection.java</url>
+          <line>281</line>
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/AdvanceCollection.java</url>
+          <line>213</line>
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/ColDashboard.java</url>
+          <line>865</line>
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/ColDashboard.java</url>
+          <line>867</line>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/ColDashboard.java</url>
+          <line>864</line>
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/MainActivity.java</url>
+          <line>1489</line>
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/SummaryDtl.java</url>
+          <line>455</line>
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/DatabaseAccess.java</url>
+          <line>223</line>
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-method">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/UploadManager.java</url>
+          <line>116</line>
+          <properties class="com.collection.tpwodloffline.UploadManager" method="&lt;init&gt;" />
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-method">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/collection/tpwodloffline/activity/MainActivity.java</url>
+          <line>1237</line>
+          <properties class="com.collection.tpwodloffline.activity.MainActivity" method="sendDataNow" />
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Remote">
+        <watch expression="EntryNum_string" language="JAVA" />
+        <watch expression="payment_count" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ConsumerBillinfo">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Payment History"
+        app:titleTextColor="@color/white" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar3">
+
+
+        <LinearLayout
+            android:id="@+id/mlayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/outer_shape"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/ylayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/month"
+                style="@style/mySpinnerItemStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:scrollbars="none"
+                android:spinnerMode="dropdown"
+                android:textSize="16sp"
+                android:theme="@style/ThemeOverlay.AppCompat.Light" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/calender" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ylayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/outer_shape"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mlayout"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/year"
+                style="@style/mySpinnerItemStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:scrollbars="none"
+                android:spinnerMode="dropdown"
+                android:textSize="16sp"
+                android:theme="@style/ThemeOverlay.AppCompat.Light" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/calender" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/consumerlayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/outer_shape"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mlayout">
+
+
+            <EditText
+                android:id="@+id/con_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="Enter consumer number"
+                android:maxLength="12"
+                android:padding="4dp"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:srcCompat="@drawable/ic_baseline_electrical_services_24" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/proceed"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/circular_btn"
+            android:text="Fetch Bill"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/consumerlayout" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/proceed">
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Payment Details"
+                android:textColor="#F5131313"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/billmonth"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:padding="4dp"
+                android:visibility="gone"
+                android:text="Bill month           :  "
+                android:textColor="#F5131313"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/billmonthval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/title"
+                android:padding="4dp"
+                android:textColor="#F5131313"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/nospay"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/billmonth"
+                android:padding="4dp"
+                android:visibility="gone"
+                android:text="No. of Payment :  "
+                android:textColor="#F5131313"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/nospayval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/billmonthval"
+                android:padding="4dp"
+                android:layout_centerInParent="true"
+                android:textColor="#F5131313"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nospay"
+                android:padding="4dp"
+                android:visibility="gone"
+                android:text="Amount Paid      : "
+                android:textColor="#F5131313"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/amountval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nospayval"
+                android:padding="4dp"
+                android:layout_centerInParent="true"
+                android:textColor="#F5131313"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:visibility="gone"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/proceed">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#0F99A1CF">
+
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Payment Details"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="21dp"
+                    android:text="Total amount paid : ₹360.00"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="15dp"
+                    android:textSize="17sp"
+                    android:textColor="@color/gray"
+                    android:text="Bill month : 202104"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="No of payment : 1"
+                    android:textColor="@color/gray"
+                    android:textSize="17sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_paid" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/progressView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="#5B3F51B5"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:elevation="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <ProgressBar
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center" />
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

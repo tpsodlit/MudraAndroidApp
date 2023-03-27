@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: D./Andrprojs/tpsodl/MudraCC/app/libs/ezetapandroidsdk_2_25.aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/80f7c1dd93443d1039ed111a909b263e/jetified-ezetapandroidsdk_2_25/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/80f7c1dd93443d1039ed111a909b263e/jetified-ezetapandroidsdk_2_25/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/80f7c1dd93443d1039ed111a909b263e/jetified-ezetapandroidsdk_2_25/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

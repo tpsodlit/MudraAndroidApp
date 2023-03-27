@@ -1,0 +1,116 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+//security
+def AUTHKEY = '"' + Authkey + '"' ?: '"Auth keys"'
+def STRING = 'String'
+//security
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion "30.0.3"
+    //added for phi thermal printer
+    packagingOptions {
+        exclude 'AndroidManifest.xml'
+    }
+    lintOptions {
+        checkReleaseBuilds false
+    }
+    ////
+    defaultConfig {
+        applicationId "com.collection.tpwodloffline"
+        minSdkVersion 24
+        targetSdkVersion 31
+        versionCode 8
+        versionName "1.1.7" //Live version running on POS Machines and devices is 1.1.7
+        vectorDrawables.useSupportLibrary = true
+        //security
+        each { type ->
+            type.buildConfigField STRING, 'Authkey', AUTHKEY
+        }
+        manifestPlaceholders = [
+                AUTHKEY: AUTHKEY
+        ]
+        buildConfigField("String", "EzetapAppKey", EzetapAppKey)
+        buildConfigField("String", "EzetapmerchantName", EzetapmerchantName)
+        buildConfigField("String", "EzetapuserName", EzetapuserName)
+
+//security
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    defaultConfig {
+        // Enabling multidex support.
+        multiDexEnabled true
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+    }
+    dexOptions {
+        preDexLibraries = false
+        javaMaxHeapSize "4g"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    // sourceSets { main { jni.srcDirs = ['src/main/jni', 'src/main/jniLibs/'] } }
+    //  jniLibs.srcDirs += ['jniLibs/armeabi']
+    // sourceSets { main { jni.srcDirs = ['src/main/jni', 'src/main/jniLibs'] } }
+    sourceSets {
+        main {
+            jniLibs.srcDirs += ['jniLibs/armeabi']
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation files('D:\\Andrprojs\\tpsodl\\MudraCC\\app\\libs\\ezetapandroidsdk_2_25.aar')
+    //testCompile 'junit:junit:4.12'
+    def work_version = "2.7.1"
+    implementation "androidx.work:work-runtime:$work_version"
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    // compile 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
+    implementation files('libs/CESU_LIB.jar')
+    implementation files('libs/AnalogicsVersa2IBTPrinterAPI.jar')
+    // compile 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
+    implementation files('libs/sqliteassethelper-2.0.1.jar')
+    implementation files('libs/common-lang3.jar')
+    implementation files('libs/OnBarcode.AndroidBarcode.jar')
+    implementation files('libs/org-apache-commons-codec.jar')
+    //implementation files('libs/QualcommSc20E_2I_Printer_API_1.1.jar')
+    implementation files('libs/print.jar')
+    implementation files('libs/AnalogicsMultilingual_BT_Printer_2T_API_2_0.jar')
+    implementation files('libs/ePOS2.jar')
+    implementation files('libs/btgenie.jar')
+    implementation files('libs/Bluetooth_WIFI_SDK6.1.jar')
+    implementation project(':library')
+
+    implementation 'com.google.android.gms:play-services-base:17.6.0'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+    implementation 'com.google.android.libraries.places:places:2.4.0'
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    implementation 'com.android.volley:volley:1.2.0'
+    implementation 'com.google.android.play:core:1.10.3'
+    implementation group: 'org.apache.cxf', name: 'cxf-api', version: '2.6.10'
+    implementation 'androidx.core:core-ktx:1.6.0'
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+}
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
+}

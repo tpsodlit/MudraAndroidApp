@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.geronimo.specs:geronimo-javamail_1.4_spec:1.7.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.geronimo.specs/geronimo-javamail_1.4_spec/1.7.1/43ad4090b1a07a11c82ac40c01fc4e2fbad20013/geronimo-javamail_1.4_spec-1.7.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.geronimo.specs/geronimo-javamail_1.4_spec/1.7.1/9951cdfcabdb502d07900b546f337e9ea52fbc9e/geronimo-javamail_1.4_spec-1.7.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.geronimo.specs/geronimo-javamail_1.4_spec/1.7.1/8c671a08f1a98697e26419b69451430e153193c0/geronimo-javamail_1.4_spec-1.7.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

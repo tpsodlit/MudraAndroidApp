@@ -1,0 +1,30 @@
+jp/co/recruit_lifestyle/android/floatingview/FloatingViewListener.java
+ jp.co.recruit_lifestyle.android.floatingview.FloatingViewListener
+jp/co/recruit_lifestyle/android/floatingview/BuildConfig.java
+ jp.co.recruit_lifestyle.android.floatingview.BuildConfig
+jp/co/recruit_lifestyle/android/floatingview/TrashView.java
+ jp.co.recruit_lifestyle.android.floatingview.TrashView
+ jp.co.recruit_lifestyle.android.floatingview.TrashView$AnimationHandler
+ jp.co.recruit_lifestyle.android.floatingview.TrashView$AnimationState
+jp/co/recruit_lifestyle/android/floatingview/ScreenChangedListener.java
+ jp.co.recruit_lifestyle.android.floatingview.ScreenChangedListener
+jp/co/recruit_lifestyle/android/floatingview/FloatingViewManager.java
+ jp.co.recruit_lifestyle.android.floatingview.FloatingViewManager
+ jp.co.recruit_lifestyle.android.floatingview.FloatingViewManager$DisplayMode
+ jp.co.recruit_lifestyle.android.floatingview.FloatingViewManager$MoveDirection
+ jp.co.recruit_lifestyle.android.floatingview.FloatingViewManager$Options
+jp/co/recruit_lifestyle/android/floatingview/FullscreenObserverView.java
+ jp.co.recruit_lifestyle.android.floatingview.FullscreenObserverView
+jp/co/recruit_lifestyle/android/floatingview/FloatingView.java
+ jp.co.recruit_lifestyle.android.floatingview.FloatingView
+ jp.co.recruit_lifestyle.android.floatingview.FloatingView$1
+ jp.co.recruit_lifestyle.android.floatingview.FloatingView$2
+ jp.co.recruit_lifestyle.android.floatingview.FloatingView$3
+ jp.co.recruit_lifestyle.android.floatingview.FloatingView$4
+ jp.co.recruit_lifestyle.android.floatingview.FloatingView$5
+ jp.co.recruit_lifestyle.android.floatingview.FloatingView$6
+ jp.co.recruit_lifestyle.android.floatingview.FloatingView$AnimationState
+ jp.co.recruit_lifestyle.android.floatingview.FloatingView$FloatingAnimationHandler
+ jp.co.recruit_lifestyle.android.floatingview.FloatingView$LongPressHandler
+jp/co/recruit_lifestyle/android/floatingview/TrashViewListener.java
+ jp.co.recruit_lifestyle.android.floatingview.TrashViewListener

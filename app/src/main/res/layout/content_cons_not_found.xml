@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:showIn="@layout/activity_cons_not_found"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    tools:context="com.collection.tpwodloffline.ConsNotFound">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_centerInParent="true"
+        android:text="Consumer Not Found"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/BackBtn"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:background="#6183c3"
+        android:textStyle="bold"
+        android:textSize="25dp" />
+</RelativeLayout>

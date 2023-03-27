@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/welcomename"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start|center_vertical"
+                    android:paddingTop="2dp"
+                    android:text="Collection Dashboard"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#ffffff"
+                    android:textSize="19dp" />
+
+
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintVertical_bias="0.0">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/acc_coll"
+                    android:layout_width="145dp"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="15dp"
+                    android:elevation="4dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:visibility="visible"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="4dp"
+                    app:layout_constraintEnd_toStartOf="@+id/adv_col"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/home_bnr_recyclerView">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="5dp"
+                        android:background="#6183c3">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:adjustViewBounds="true"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/collection" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/accollection"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/adv_col"
+                    android:layout_width="145dp"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="15dp"
+                    android:elevation="4dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:visibility="visible"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/acc_coll"
+                    app:layout_constraintTop_toBottomOf="@+id/home_bnr_recyclerView">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="5dp"
+                        android:background="#6183c3">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:adjustViewBounds="true"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/collection" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/advcollection"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/offline_report"
+                    android:layout_width="145dp"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="28dp"
+                    android:elevation="4dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:visibility="visible"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="4dp"
+                    app:layout_constraintEnd_toStartOf="@+id/locate_now"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/acc_coll">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="5dp"
+                        android:background="#6183c3">
+
+
+                        <ImageView
+                            android:id="@+id/imageView22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:adjustViewBounds="true"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/offline_report" />
+
+                        <TextView
+                            android:id="@+id/textView23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/sync"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView22" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/locate_now"
+                    android:layout_width="145dp"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="28dp"
+                    android:elevation="4dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:visibility="visible"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/offline_report"
+                    app:layout_constraintTop_toBottomOf="@+id/adv_col">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="5dp"
+                        android:background="#6183c3">
+
+
+                        <ImageView
+                            android:id="@+id/imageView32"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:adjustViewBounds="true"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/locate" />
+
+                        <TextView
+                            android:id="@+id/textView34"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/locate"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView32" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="24dp"
+                    android:elevation="4dp"
+                    android:visibility="visible"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/offline_report">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/usercount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="6dp"
+                            android:layout_marginTop="4dp"
+                            android:textSize="17sp" />
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="10dp"
+                            android:layout_weight="0.17">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="0"
+                                    android:text="@string/today_s_collection"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tdcoll"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="2"
+                                    android:layout_gravity="left"
+                                    android:layout_marginLeft="10dp"
+                                    android:textAlignment="gravity"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="0"
+                                    android:text="@string/today_s_money_receipt"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/todaytmr"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="2"
+                                    android:layout_gravity="left"
+                                    android:layout_marginLeft="10dp"
+                                    android:textAlignment="gravity"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="0"
+                                    android:text="Total Collection:"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="@color/txt_colors"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/totcoll"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_column="2"
+                                    android:layout_gravity="left"
+                                    android:layout_marginLeft="10dp"
+                                    android:textAlignment="gravity"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="@color/txt_colors"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="0"
+                                    android:text="Total Money Receipt:"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="@color/txt_colors"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/totmr"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="2"
+                                    android:layout_gravity="left"
+                                    android:layout_marginLeft="10dp"
+                                    android:textAlignment="gravity"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="@color/txt_colors"
+                                    android:textSize="17sp"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="0"
+                                    android:text="Cash:"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/cash"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="2"
+                                    android:layout_gravity="left"
+                                    android:layout_marginLeft="10dp"
+                                    android:textAlignment="gravity"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="0"
+                                    android:text="DD:"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/dd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="2"
+                                    android:layout_gravity="left"
+                                    android:layout_marginLeft="10dp"
+                                    android:textAlignment="gravity"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textIsSelectable="false"
+
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="0"
+                                    android:text="Cheque:"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/cheque"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="2"
+                                    android:layout_gravity="left"
+                                    android:layout_marginLeft="10dp"
+                                    android:textAlignment="gravity"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="0"
+                                    android:text="NEFT:"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/neft"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="2"
+                                    android:layout_gravity="left"
+                                    android:layout_marginLeft="10dp"
+                                    android:textAlignment="gravity"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="0"
+                                    android:text="RTGS:"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/rtgs"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="2"
+                                    android:layout_gravity="left"
+                                    android:layout_marginLeft="10dp"
+                                    android:textAlignment="gravity"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/textView9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="0"
+                                    android:text="Balance Remained:"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold|italic" />
+
+                                <TextView
+                                    android:id="@+id/balrem"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="2"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold|italic" />
+                            </TableRow>
+
+                        </TableLayout>
+                        <TextView
+                            android:id="@+id/uid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="6dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textStyle="bold|italic"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+                <ImageView
+                    android:id="@+id/home_bnr_recyclerView"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/tp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <FrameLayout
+        android:id="@+id/progress_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8D000000"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="4dp"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="15dp"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <ProgressBar
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="Please wait..."
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

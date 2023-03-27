@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="OTS NonOts Chooser"
+        app:titleTextColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="35dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RadioGroup
+            android:id="@+id/searchtyp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rdb_ots"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginBottom="9dp"
+                android:checked="true"
+                android:text="OTS Payment"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rdb_non_ots"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginBottom="9dp"
+                android:checked="false"
+                android:text="Non-OTS Payment"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circular_btn"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+</RelativeLayout>

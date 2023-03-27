@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimarynonen">#019267</color>
+    <color name="colorPrimarynonentop">#037C58</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="platinum">#f1f1f1</color>
+    <color name="gray">#FF444447</color>
+    <color name="txt_color">#222B2F</color>
+    <color name="txt_colors">#4E5353</color>
+    <color name="progress_frame_bg">#48272727</color>
+    <color name="gray_txt">#AD1C1C1C</color>
+    <color name="red">#ca2626</color>
+    <color name="redptn">#74C6D5</color>
+    <color name="gray_two">#D1C9C9</color>
+    <color name="color_one">#F44336</color>
+    <color name="color_two">#FFEB3B</color>
+    <color name="color_three">#5a0618</color>
+
+</resources>

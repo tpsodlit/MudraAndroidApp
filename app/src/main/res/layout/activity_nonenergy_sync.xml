@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.OfflineRecords">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimarynonen"
+        app:title="Sync"
+        app:titleTextColor="@color/white">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        app:cardCornerRadius="6dp"
+        android:layout_margin="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:id="@+id/lvPending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:padding="10dp">
+
+
+
+                    <TextView
+                        android:id="@+id/txtPending"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:text="0"
+                        android:background="@drawable/circularnen"
+                        android:textSize="22sp"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pending_in_offline"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lvUploaded"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+
+                    <TextView
+                        android:id="@+id/txtUploaded"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:text="0"
+                        android:background="@drawable/circularnen"
+                        android:textSize="22sp"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/uploaded_to_server"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lvUploadeduid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:id="@+id/txtuid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/txtdid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnUploadPending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:drawableStart="@drawable/upload"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:textColor="@color/white"
+                android:background="@drawable/circular_btn_nen"
+                android:text="@string/upload_pending_data"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

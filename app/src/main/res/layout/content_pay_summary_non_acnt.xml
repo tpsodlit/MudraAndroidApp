@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <RelativeLayout  android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/tableLayout2">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Ref. Number :"
+                    android:id="@+id/textView30"
+                    android:layout_column="0"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/Cons_no"
+                    android:layout_column="1"
+                    android:textColor="#ca2626"
+                    android:textStyle="bold"
+                    android:textSize="20dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Amount Received :"
+                    android:id="@+id/textView31"
+                    android:layout_column="0"
+                    android:textStyle="bold"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/PayAmt"
+                    android:layout_column="1"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#ca2626" />
+
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tableLayout2"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Name:"
+                android:id="@+id/CustName"
+                android:layout_gravity="center_horizontal|left"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Select Pay Mode"
+                android:id="@+id/textView32"
+                android:layout_marginBottom="2dp"
+                android:textSize="18dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textColor="#065663" />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/searchtyp">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cash"
+                    android:id="@+id/cash"
+                    android:checked="true"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textColor="#ca2626" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cheque "
+                    android:id="@+id/chq"
+                    android:checked="false"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:visibility="gone"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DD"
+                    android:id="@+id/dd"
+                    android:checked="false"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="POS"
+                    android:id="@+id/pos"
+                    android:checked="false"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RTGS"
+                    android:id="@+id/rtgs"
+                    android:checked="false"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NEFT"
+                    android:id="@+id/neft"
+                    android:checked="false"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_marginBottom="10dp" />
+
+            </RadioGroup>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/spinBank"
+                android:spinnerMode="dropdown"
+                android:background="#f8996d" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:singleLine="true"
+                android:id="@+id/et_Bank_name"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:hint="Enter bank name" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/chqno"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:hint="MICR  Number" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/micr_no"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:hint="MICR  Number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Cheque/DD/RTGS/NEFT Date in ddmmyyyy format"
+                android:id="@+id/chqformattxt"
+                android:textColor="#ca2626"
+                android:textStyle="bold"
+                android:textSize="13dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/chqdt"
+                android:layout_marginTop="3dp"
+                android:hint="Chq/DD Date" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/posid"
+                android:layout_marginTop="3dp"
+                android:hint="POS TRANS. ID" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:weightSum="1"
+                android:layout_marginBottom="5dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cheque/DD/RTGS/NEFT Date"
+                    android:id="@+id/pkdate"
+                    android:background="#f08d13"
+                    android:layout_weight="0.17"
+                    android:textStyle="bold|italic"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginBottom="3dp" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="Submit"
+                    android:id="@+id/submitbtn"
+                    android:layout_marginTop="5dp"
+                    android:background="#6183c3"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginLeft="40dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    android:id="@+id/back"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="#6183c3"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal" />
+            </TableRow>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

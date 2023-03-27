@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ConsumerBillinfo">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimarynonen"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Non-Energy Collection"
+        app:titleTextColor="@color/white" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/proceed">
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:padding="4dp"
+                android:text="Receipt Generation Successful"
+                android:textColor="#F5131313"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dept"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:padding="4dp"
+                android:text="Department   :  "
+                android:textColor="#F5131313"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/deptval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_alignParentLeft="true"
+                android:padding="4dp"
+                android:textColor="#F5131313"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/rec_num"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dept"
+                android:padding="4dp"
+                android:text="Rec. No.    :  "
+                android:textColor="#F5131313"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/rec_numval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/deptval"
+                android:layout_alignParentLeft="true"
+                android:padding="4dp"
+                android:textColor="#F5131313"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rec_num"
+                android:padding="4dp"
+                android:text="Name    :  "
+                android:textColor="#F5131313"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/nameval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rec_numval"
+                android:layout_alignParentLeft="true"
+                android:padding="4dp"
+                android:textColor="#F5131313"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/scnum"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:padding="4dp"
+                android:text="SC No.  :"
+                android:textColor="#F5131313"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/scnumval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameval"
+                android:layout_alignParentLeft="true"
+                android:padding="4dp"
+                android:textColor="#F5131313"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/section"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scnum"
+                android:padding="4dp"
+                android:text="Section : "
+                android:textColor="#F5131313"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/sectionval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scnumval"
+                android:layout_alignParentLeft="true"
+                android:padding="4dp"
+                android:textColor="#F5131313"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/ddate"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/section"
+                android:padding="4dp"
+                android:text="Date  : "
+                android:textColor="#F5131313"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/ddateval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sectionval"
+                android:layout_alignParentLeft="true"
+                android:padding="4dp"
+                android:textColor="#F5131313"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ddate"
+                android:padding="4dp"
+                android:text="Amt Received :"
+                android:textColor="#F5131313"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/amountval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ddateval"
+                android:layout_alignParentLeft="true"
+                android:padding="4dp"
+                android:textColor="#F5131313"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/transid"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/amount"
+                android:padding="4dp"
+                android:text="Txd ID  : "
+                android:textColor="#F5131313"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/transidval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/amountval"
+                android:layout_alignParentLeft="true"
+                android:padding="4dp"
+                android:textColor="#F5131313"
+                android:textSize="16sp" />
+
+
+            <Button
+                android:id="@+id/startpayment"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/transidval"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/circular_btn"
+                android:backgroundTint="@color/colorPrimarynonen"
+                android:text="@string/print"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:visibility="gone"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/proceed">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#0F99A1CF">
+
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Payment Details"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="21dp"
+                    android:text="Total amount paid : ₹360.00"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Bill month : 202104"
+                    android:textColor="@color/gray"
+                    android:textSize="17sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="No of payment : 1"
+                    android:textColor="@color/gray"
+                    android:textSize="17sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_paid" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/progressView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="#280BBC87"
+        android:visibility="visible">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/protxt"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorPrimarynonen"
+                    android:layout_height="wrap_content"/>
+
+                <ProgressBar
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
